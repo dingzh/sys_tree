@@ -1,0 +1,77 @@
+dzh@dzh-ubuntu:~$ adb shell
+root@generic:/ # cd /data/misc
+root@generic:/data/misc # insmod *.ko                                        
+root@generic:/data/misc # ./ptreeTest
+5140219268  Parent is 1866
+5140219268  Child is 1867
+swapper,0,0,0,0,0,0
+init,1,1,0,1,1,0
+	ueventd,43,1,1,1,43,0
+	logd,60,1,1,1,60,1036
+	vold,61,1,1,1,61,0
+	healthd,65,1,1,1,65,0
+	lmkd,66,1,1,1,66,0
+	servicemanager,67,1,1,1,67,1000
+	surfaceflinger,68,1,1,1,68,1000
+	qemud,70,1,1,1,70,0
+	sh,73,1,1,1,73,2000
+	adbd,74,1,1,1,74,0
+		sh,1860,1,74,1,1860,0
+			ptreeTest,1866,1,1860,1,1866,0
+				ptreeARM,1867,0,1866,1,1867,0
+	netd,75,1,1,1,75,0
+	debuggerd,76,1,1,1,76,0
+	rild,77,1,1,1,77,1001
+	drmserver,78,1,1,1,78,1019
+	mediaserver,79,1,1,1,79,1013
+	installd,80,1,1,1,80,0
+	keystore,85,1,1,1,85,1017
+	main,86,1,1,1,86,0
+		system_server,278,1,86,0,278,1000
+		putmethod.latin,686,1,86,0,686,10033
+		m.android.phone,706,1,86,0,706,1001
+		droid.launcher3,714,1,86,0,714,10008
+		d.process.acore,753,1,86,0,753,10002
+		e.process.gapps,806,1,86,0,806,10007
+		d.process.media,838,1,86,0,838,10005
+		ndroid.systemui,899,1,86,0,899,10014
+		gle.android.gms,920,1,86,0,920,10007
+		id.gms.wearable,965,1,86,0,965,10007
+		.gms.persistent,1040,1,86,0,1040,10007
+		droid.deskclock,1098,1,86,0,1098,10024
+		.quicksearchbox,1139,1,86,0,1139,10046
+		viders.calendar,1209,1,86,0,1209,10001
+		ndroid.calendar,1318,1,86,0,1318,10020
+		.apps.messaging,1413,1,86,0,1413,10043
+		id.gms.unstable,1546,1,86,0,1546,10007
+	gatekeeperd,87,1,1,1,87,1000
+	perfprofd,90,1,1,1,90,0
+	fingerprintd,91,1,1,1,91,1000
+kthreadd,2,1,0,0,2,0
+	ksoftirqd/0,3,1,2,0,3,0
+	kworker/u:0,5,1,2,0,5,0
+	khelper,6,1,2,0,6,0
+	sync_supers,7,1,2,0,7,0
+	bdi-default,8,1,2,0,8,0
+	kblockd,9,1,2,0,9,0
+	rpciod,10,1,2,0,10,0
+	kswapd0,12,1,2,0,12,0
+	fsnotify_mark,13,1,2,0,13,0
+	crypto,14,1,2,0,14,0
+	kworker/u:1,25,1,2,0,25,0
+	mtdblock0,30,1,2,0,30,0
+	mtdblock1,35,1,2,0,35,0
+	mtdblock2,40,1,2,0,40,0
+	binder,41,1,2,0,41,0
+	deferwq,42,1,2,0,42,0
+	jbd2/mtdblock0-,45,1,2,0,45,0
+	ext4-dio-unwrit,46,1,2,0,46,0
+	jbd2/mtdblock1-,52,1,2,0,52,0
+	ext4-dio-unwrit,53,1,2,0,53,0
+	jbd2/mtdblock2-,58,1,2,0,58,0
+	ext4-dio-unwrit,59,1,2,0,59,0
+	kauditd,84,1,2,0,84,0
+	kworker/0:0,779,1,2,0,779,0
+	kworker/0:2,1750,1,2,0,1750,0
+75|root@generic:/data/misc # 
+
